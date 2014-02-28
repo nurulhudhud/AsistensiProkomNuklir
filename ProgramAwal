@@ -1,0 +1,39 @@
+/*
+  "Jangan malas untuk berpikir dan mencoba :)"
+  
+  Buatlah program konversi temperatur dari celcius ke fahrenheit yang dilengkapi dengan identitas diri anda.
+  Langkah yang harus dilakukan adalah:
+  1. Mendefinisikan pustaka standar
+  2. Mendefinisikan variabel temperatur celcius dan fahrenheit
+  3. Menampilkan identitas diri
+  4. Memasukkan nilai temperatur celcius
+  5. Melakukan perhitungan konversi nilai
+  6. Menampilkan hasil konversi
+*/
+
+/* CATATAN :
+  Coba analisis bagaimana hasil program bila kita meletakkan rumus perhitungan konversi sebelum menginput nilai Fahrenheit ?
+*/
+
+/* Program Utama */
+
+//Mendefinisikan pustaka standar
+#include <iostream>
+using namespace std;
+
+/* ada 2 cara untuk mendefinisikan variabel :
+    1. Global variable, terletak diluar kelas
+    2. Local variable, terletak didalam kelas (Saat ini kita gunakan)
+*/
+
+void main(){
+  //Ada baiknya ketika mendefinisikan suatu variabel, kita berikan nilai awal
+  float nilaiCelcius = 0;
+  float nilaiFahrenheit = 0;
+  cout<<"Nurul Huda\n10/298887/TK/3663"<<endl;
+  cout<<"Masukkan nilai temperatur celcius: ";
+  cin>>nilaiCelcius;
+  nilaiFahrenheit = (9.0/5)*nilaiCelcius + 32; //Jangan lupa, 9/5 hasilnya integer, untuk itu tulis 9.0/5 atau 9/5.0
+  cout<<"Maka nilai temperatur fahrenheit: "<<nilaiFahrenheit<<endl;
+  system("pause");
+}
