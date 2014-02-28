@@ -1,0 +1,33 @@
+/*
+  "Jangan malas untuk berpikir dan mencoba :)"
+  
+  Buatlah program yang dapat menampilkan nilai maksimum dari 2 nilai.
+  Langkah yang harus dilakukan adalah:
+  1. Mendefinisikan pustaka standar
+  2. Mendefinisikan variabel nilai1 dan nilai2
+  3. Memasukkan nilai1 dan nilai2
+  4. Melakukan perbandingan kondisi
+  5. Menampilkan kesimpulan
+*/
+
+/* Program Utama 
+    Program ini menampilkan kesimpulan dari kondisi dalam integer
+*/
+
+//Mendefinisikan pustaka standar
+#include <iostream>
+//#include <string> //String bukan merupakan tipe data primitif layaknya (char, short, int, float) sehingga butuh pustaka standar
+using namespace std;
+
+void main(){
+  int nilai1 = 0;
+  int nilai2 = 0;
+  int nilaiMaksimum;
+  cout<<"Masukkan nilai1= ";
+  cin>>nilai1;
+  cout<<"Masukkan nilai2= ";
+  cin>>nilai2;
+  nilaiMaksimum = (nilai1 > nilai2)?nilai1:nilai2;
+  cout<<"Nilai maksimum adalah  "<<nilaiMaksimum<<endl;
+  system("pause");
+}
